@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Tapau Mao</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button">Tapau Mao</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="home.html" class="w3-bar-item w3-button">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="admin.html" class="w3-bar-item w3-button">Administration</a>
+        <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+ <!-- Menu Section -->
+ <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h2>Butter Chili Cream</h2>
+      <p class="w3-text-grey">butter, curry leaf, chili flakes, cili padi</p><br>
+    
+    <h3>MAINS</h3>
+    <hr>
+      <h4>Clams</h4>
+      <p class="w3-text-grey">only RM20</p><br>
+
+      <h4>Prawn</h4>
+      <p class="w3-text-grey">7 pcs large RM25</p><br>
+
+      <h4>Lala</h4>
+      <p class="w3-text-grey">only RM18</p><br>
+    
+      <h4>Big set</h4>
+      <p class="w3-text-grey">lala 250g, clams 250g & prawn 10 pcs large RM65</p><br>
+    
+    <h3>SIDES</h3>
+    <hr>
+      <h4>Garlic bread</h4>
+      <p class="w3-text-grey">6 pcs RM3</p><br>
+    
+      <h4>Mantao</h4>
+      <p class="w3-text-grey">4 pcs RM4</p><br>
+      
+      <h4>Rice & salad</h4>
+      <p class="w3-text-grey">Salad, tomato RM2.50</p><br>
+
+    <h3>ADDITIONAL</h3>
+    <hr>
+    <h4>Extra Sauce</h4>
+      <p class="w3-text-grey">butter chili cream RM3</p><br>
+    </div>
+     
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images/lala.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      <img src="images/clams 2.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      <img src="images/prawn.png" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      <img src="images/big 1.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <div style="text-align:center">
+    <h2>Let's see in the making of butter chili cream</h2>
+    <p>Click on the button to open the video in fullscreen mode.</p>
+    <button onclick="openFullscreen();">Click Me!</button>
+    <p></p>
+    <video controls controls id="myvideo">
+        <source src="video/tapau 1.MP4" type="video/mp4">
+        <source src="video/tapau 1.MP4" type="video/ogg">
+    </video>
+    
+    
+    <script>
+    var elem = document.getElementById("myvideo");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    </script>
+   
+</body>
+<hr>
+
+</body>
+</html>
